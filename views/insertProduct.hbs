@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stylesInsert.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Insert Product</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="/images/logo.png" alt="">
+            </div>
+            <ul class="nav-area">
+                
+            </ul>
+        </div>
+        <div class="addProduct">
+            <h2>Add New Product</h2>
+            <form action="/product/insert" enctype="multipart/form-data" method="POST">
+                <p>Product Name</p> 
+                <input class="form-control" type="text" name="productName">
+                <br>
+                <p>Image</p>
+                <div><input type="file" name="picture" accept="image/*" /></div>
+                <br>
+                <p>Price </p>
+                <input class="form-control" type="text" name="Price" id="">
+                <br>
+                <p>Description </p>
+                <input class="form-control" type="text" name="Description">
+                <br>
+                
+                
+                <input class="btn btn-primary" type="submit" value="Create new">
+            </form>
+        </div>
+    </header>
+</body>
+
+</html>

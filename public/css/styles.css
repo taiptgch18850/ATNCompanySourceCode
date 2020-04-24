@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 1170px;
+    margin: auto;
+
+}
+header{
+    background:url(/images/background.jpg);
+    height: 100vh;
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.nav-area{
+    float: left;
+    list-style: none;
+    margin-top: 60px;
+}
+.nav-area li{
+    display: inline-block;
+}
+.nav-area li a{
+    color: #f5f6fa;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+    margin-left: 50px;
+}
+.nav-area li a:hover{
+    background: #f5f6fa;
+    color: #273c75;
+}
+.logo img{
+    width: 150px;
+    float: left;
+    height: auto;
+    padding-top: 10px;
+}
+.welcome-text{
+    position: absolute;
+    width: 600px;
+    height: 0px;
+    margin: 20% 30%;
+    text-align: center;
+}
+.welcome-text h1{
+    text-align: center;
+    color:blue;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.welcome-text a{
+    border: 2px solid #f5f6fa;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #f5f6fa;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.welcome-text a:hover{
+    background: #f5f6fa;
+    color: #273c75;
+}

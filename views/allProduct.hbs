@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stylesProduct.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/70903ff595.js" crossorigin="anonymous"></script>
+    <title>product</title>
+</head>
+
+<body>
+    <header>
+    <div class="container">
+        <div class="logo">
+            <a href="/index"><img src="/images/logo.png" alt=""></a>
+        </div>
+          <div class="search-bar">
+            <form class="form-inline" action="/product/search" method="POST">
+                <input class="form-control" type="text" name="productName" id="" placeholder="Enter product name here..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter product name here...'">
+
+
+                <input class="btn btn-primary" type="submit" value="Search">
+            </form>
+        </div>
+        
+        <div class="nav-area">
+            
+        </div>
+    <div> 
+        <table class="table " width="50%" border="1">
+            <tr class="title">
+                <td>ID</td>
+                <td>Product Name</td>
+                <td>Image</td>          
+                <td>Price</td>
+                <td>Description</td>
+                <td>Action</td>
+            </tr>
+            {{# each product}}
+            <tr>
+                <td>{{_id}}</td>
+                <td>{{ProductName}}</td>
+                <td><img src='/product/photos/{{_id}}' alt="" width="110px""></td>
+                <td>{{Price}}</td>
+                <td>{{Description}}</td> 
+                <td>
+                    <a href="/product/edit?id={{_id}}"><input class="btn btn-info" type="submit" value="Update"></a>
+                    <a href="/product/delete?id={{_id}}"><input class="btn btn-danger" type="button" value="Delete" onclick="return confirm ('Are you sure to delete this?');"></a>
+                </td>
+            </tr>
+            {{/each}}
+        </table>
+        <a href="/product/insert"><button type="button" class="btn btn-success" >+Add new product</button></a>
+    </div>
+    </div>
+    </header>
+</body>
+
+</html>
