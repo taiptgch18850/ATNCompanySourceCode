@@ -27,11 +27,11 @@ app.use('/index', indexController);
 var productController = require("./product.js");
 app.use('/product', productController);
 
-// const PORT = process.env.PORT || 3000;
-// app.listen(PORT, () => console.log(`Listening ${ PORT }`));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Listening ${ PORT }`));
 
-var http = require('http').Server(app);
+// var http = require('http').Server(app);
 
-http.listen(process.env.PORT || 3000, function(){
-    console.log('listening on', http.address().port);
-  });
+// http.listen(process.env.PORT || 3000, function(){
+//     console.log('listening on', http.address().port);
+//   });
