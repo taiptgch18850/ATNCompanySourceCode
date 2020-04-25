@@ -1,0 +1,29 @@
+{
+  "name": "atncompany",
+  "version": "1.0.0",
+  "description": "assignment2",
+  "main": "index.js",
+  "dependencies": {
+    "consolidate": "^0.15.1",
+    "express": "^4.17.1",
+    "fs-extra": "^9.0.0",
+    "handlebars": "^4.7.6",
+    "mongodb": "^3.5.6",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taiptgch18850/ATNCompanySourceCode.git"
+  },
+  "author": "Pham Tien Tai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taiptgch18850/ATNCompanySourceCode/issues"
+  },
+  "homepage": "https://github.com/taiptgch18850/ATNCompanySourceCode#readme"
+}
+
