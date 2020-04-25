@@ -28,4 +28,4 @@ var productController = require("./product.js");
 app.use('/product', productController);
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
+app.listen(PORT, () => console.log(`Listening ${ PORT }`));
